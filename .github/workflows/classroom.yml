@@ -11,7 +11,7 @@ permissions:
 jobs:
   grading:
     if: ${{ !contains(github.actor, 'classroom') }}
-    uses: ./grading.yml@main
+    uses: .github/workflows/grading.yml@main
     with:
       MOODLE: true  # CHANGE true=export grade to moodle
     secrets: inherit
