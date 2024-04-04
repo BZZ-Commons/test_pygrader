@@ -1,0 +1,50 @@
+[
+  {
+    "name": "test_import_statement",
+    "function": "test_import_statement",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_calc_functions",
+    "function": "test_calc_functions",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_import_calc",
+    "function": "test_import_calc",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_import_add_mul_from_calc",
+    "function": "test_import_add_mul_from_calc",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_import_addition_multiplication_from_calc",
+    "function": "test_import_addition_multiplication_from_calc",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_main_output",
+    "function": "test_main_output",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_import_calculator_from_math_operations",
+    "function": "test_import_calculator_from_math_operations",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_import_add_mul_from_calculator",
+    "function": "test_import_add_mul_from_calculator",
+    "timeout": 10,
+    "points": 1
+  }
+]

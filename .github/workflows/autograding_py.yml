@@ -22,6 +22,8 @@ env:
   USERNAME: ${{ github.actor }}
   SERVER: ${{ github.server_url }}
   REPO: ${{ github.repository }}
+  FILE_UNITTESTS: unittests.json
+  FILE_LINT: lint.json
 
 permissions:
   checks: write
