@@ -7,6 +7,12 @@ on:
         default: false
         required: false
         type: boolean
+  workflow_dispatch:
+    inputs:
+      MOODLE:
+        default: false
+        required: false
+        type: boolean
 env:
   DEVOPS_DIR: devops
   GHSECRET: ${{ secrets.GITHUB_TOKEN }}
