@@ -11,7 +11,7 @@ permissions:
 jobs:
   grading:
     if: ${{ !contains(github.actor, 'classroom') }}
-    uses: BZZ-Commons/workflows/.github/workflows/grading.yml@main
+    uses: ./grading.yml
     with:
       MOODLE: true  # CHANGE true=export grade to moodle
     secrets: inherit
