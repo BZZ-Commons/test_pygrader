@@ -1,49 +1,49 @@
 [
   {
-    "name": "test_import_statement",
-    "function": "test_import_statement",
+    "name": "test_in_meters_per_second",
+    "function": "test_in_meters_per_second",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "test_calc_functions",
-    "function": "test_calc_functions",
+    "name": "test_reaction_distance",
+    "function": "test_reaction_distance",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "test_import_calc",
-    "function": "test_import_calc",
+    "name": "test_braking_distance_dry",
+    "function": "test_braking_distance_dry",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "test_import_add_mul_from_calc",
-    "function": "test_import_add_mul_from_calc",
+    "name": "test_braking_distance_wet",
+    "function": "test_braking_distance_wet",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "test_import_addition_multiplication_from_calc",
-    "function": "test_import_addition_multiplication_from_calc",
+    "name": "test_stopping_distance_dry",
+    "function": "test_stopping_distance_dry",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "test_main_output",
-    "function": "test_main_output",
+    "name": "test_stopping_distance_wet",
+    "function": "test_stopping_distance_wet",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "test_import_calculator_from_math_operations",
-    "function": "test_import_calculator_from_math_operations",
+    "name": "test_safety_distance_meter",
+    "function": "test_safety_distance_meter",
     "timeout": 10,
     "points": 1
   },
   {
-    "name": "test_import_add_mul_from_calculator",
-    "function": "test_import_add_mul_from_calculator",
+    "name": "test_safety_distance_seconds",
+    "function": "test_safety_distance_seconds",
     "timeout": 10,
     "points": 1
   }
