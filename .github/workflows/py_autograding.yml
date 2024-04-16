@@ -37,12 +37,12 @@ jobs:
     steps:
       - name: Checkout student repo
         uses: actions/checkout@v4
-
       - name: Checkout autograde repo
         uses: actions/checkout@v4
         with:
           repository: BZZ-Commons/pygrader
           path: autograde
+          ref: dev
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
