@@ -18,7 +18,7 @@ env:
   GHSECRET: ${{ secrets.GITHUB_TOKEN }}
   TARGET_URL: https://moodle.it.bzz.ch/moodle
   TOKEN: ${{ secrets.MOODLE_TOKEN }}
-  FUNCTION: mod_assignexternal_update_grade
+  FUNCTION: moodle_mod_externalassignment
   USERNAME: ${{ github.actor }}
   SERVER: ${{ github.server_url }}
   REPO: ${{ github.repository }}
