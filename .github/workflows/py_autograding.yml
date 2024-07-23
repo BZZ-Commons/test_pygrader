@@ -2,17 +2,9 @@ name: GitHub Classroom autograding and update moodle
 
 on:
   workflow_call:
-    inputs:
-      MOODLE:
-        default: false
-        required: false
-        type: boolean
   workflow_dispatch:
-    inputs:
-      MOODLE:
-        default: false
-        required: false
-        type: boolean
+  push:
+
 env:
   DEVOPS_DIR: devops
   GHSECRET: ${{ secrets.GITHUB_TOKEN }}
