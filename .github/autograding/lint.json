@@ -1,5 +1,4 @@
-[
-  {
-    "file": "main.py"
-  }
-]
+{
+  "files": ["main.py"],
+  "max": 5
+}

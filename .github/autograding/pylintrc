@@ -12,7 +12,7 @@ ignore=third_party
 
 # Files or directories matching the regex patterns are skipped. The regex
 # matches against base names, not paths.
-ignore-patterns='*_test.py'
+ignore-patterns=.*_test\.py
 
 # Pickle collected data for later comparisons.
 persistent=no
@@ -238,7 +238,7 @@ generated-members=
 [FORMAT]
 
 # Maximum number of characters on a single line.
-max-line-length=80
+max-line-length=120
 
 # TODO(https://github.com/pylint-dev/pylint/issues/3352): Direct pylint to exempt
 # lines made too long by directives to pytype.
@@ -257,9 +257,8 @@ max-module-lines=99999
 
 # String used as indentation unit.  The internal Google style guide mandates 2
 # spaces.  Google's externaly-published style guide says 4, consistent with
-# PEP 8.  Here, we use 2 spaces, for conformity with many open-sourced Google
-# projects (like TensorFlow).
-indent-string='  '
+# PEP 8.  We choose 4 here.
+indent-string='    '
 
 # Number of spaces of indent required inside a hanging  or continued line.
 indent-after-paren=4
