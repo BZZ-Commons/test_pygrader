@@ -2,6 +2,17 @@
 Berechnet die Anhaltestrecke, den Bremsweg und den Sicherheitsabstand für verschiedene Geschwindigkeite
 '''
 
+
+def calculate():
+    """
+    calculates the total
+    :return: None
+    """
+    price = 15.75
+    quantity = 3  # TODO change quantity to 5
+    print(f'Total: {price * quantity}')
+
+
 def in_meters_per_second(speed_kmh):
     ''' Konvertiert Geschwindigkeit von km/h zu m/s '''
     return speed_kmh / 3.6
@@ -16,8 +27,9 @@ def braking_distance(speed_mps, dry_road=True):
     braking_acceleration = 7 if dry_road else 4  # m/s^2
     return speed_mps*2 / (2 * braking_acceleration)
 
+
 def stopping_distance(speed_kmh, dry_road=True):
-    ''' Berechnet die Anhaltestrecke '''
+    ''' Berechnet die Anhaltestrecke                                                                                            '''
     speed_mps = in_meters_per_second(speed_kmh)
     return reaction_distance(speed_mps) - braking_distance(speed_mps, dry_road)
 

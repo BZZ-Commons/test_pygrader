@@ -1,7 +1,13 @@
 import pytest
 from main import (in_meters_per_second, reaction_distance, braking_distance, stopping_distance, safety_distance_meter,
                   safety_distance_seconds)
+from main import calculate
 
+
+def test_calculate(capsys):
+    calculate()
+    captured = capsys.readouterr()
+    assert captured.out == "Total: 78.75\n"
 
 def test_in_meters_per_second():
     assert in_meters_per_second(72) == pytest.approx(20)
@@ -30,6 +36,7 @@ def test_stopping_distance_wet():
 def test_safety_distance_meter():
     assert safety_distance_meter(72, True) == pytest.approx(57.14,0.01)
 
+    ''' Berechnet die Anhaltestrecke                                                                                            '''
 
 def test_safety_distance_seconds():
     assert safety_distance_seconds(72, True) == pytest.approx(2.857, 0.001)
