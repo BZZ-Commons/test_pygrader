@@ -47,4 +47,11 @@
     "timeout": 10,
     "points": 1
   }
+  ,
+  {
+    "name": "test_calculate",
+    "function": "test_calculate",
+    "timeout": 10,
+    "points": 1
+  }
 ]
