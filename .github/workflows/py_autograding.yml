@@ -63,7 +63,7 @@ jobs:
           setup-command: 'pip install -r requirements.txt'
 
       - name: Autograding Reporter
-        uses: ./
+        uses: classroom-resources/autograding-grading-reporter@v1
         env:
           PYTHON-TEST_RESULTS: "${{steps.python-test.outputs.result}}"
         with:
