@@ -67,6 +67,3 @@ jobs:
           PYTHON-TEST_RESULTS: "${{steps.python-test.outputs.result}}"
         with:
           runners: python-test
-
-      - name: Print Python Test Results
-        run: echo "Python Test Results: ${{ steps.python-test.outputs.result }}"
