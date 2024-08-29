@@ -23,7 +23,6 @@ permissions:
 
 jobs:
   grading:
-    # autograding an assignment in GitHub Classroom
     runs-on: ubuntu-latest
     steps:
       - name: Checkout student repo
@@ -61,3 +60,13 @@ jobs:
           timeout: '15'
           max-score: '100'
           setup-command: 'pip install -r requirements.txt'
+
+      - name: Autograding Reporter
+        uses: classroom-resources/autograding-grading-reporter@v1
+        env:
+          PYTHON-TEST_RESULTS: "${{steps.python-test.outputs.result}}"
+        with:
+          runners: python-test
+
+      - name: Print Python Test Results
+        run: echo "Python Test Results: ${{ steps.python-test.outputs.result }}"
