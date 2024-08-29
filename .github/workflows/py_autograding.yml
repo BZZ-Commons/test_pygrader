@@ -4,18 +4,6 @@ on:
   workflow_call:
   workflow_dispatch:
 
-env:
-  DEVOPS_DIR: devops
-  GHSECRET: ${{ secrets.GITHUB_TOKEN }}
-  TARGET_URL: ${{ vars.MOODLE_URL }}
-  TOKEN: ${{ secrets.MOODLE_TOKEN }}
-  FUNCTION: mod_externalassignment_update_grade
-  USERNAME: ${{ github.actor }}
-  SERVER: ${{ github.server_url }}
-  REPO: ${{ github.repository }}
-  FILE_UNITTESTS: unittests.json
-  FILE_LINT: lint.json
-
 permissions:
   checks: write
   actions: read
@@ -27,32 +15,7 @@ jobs:
     steps:
       - name: Checkout student repo
         uses: actions/checkout@v4
-
-      - name: Checkout autograde repo
-        uses: actions/checkout@v4
-        with:
-          repository: BZZ-Commons/pygrader
-          path: autograde
-          ref: main
-
-      - name: Copy conftest.py to student repo
-        run: cp ./autograde/conftest.py ./conftest.py
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip3 install flake8 pytest
-          if [ -f requirements.txt ]; then pip3 install -r requirements.txt; fi
-          if [ -f ./autograde/requirements.txt ]; then pip3 install -r ./autograde/requirements.txt; fi
-
-      - name: Run Tests and Upload to Moodle
-        run: python3 ./autograde/py_main.py
-
+        
       - name: Python test
         id: python-test
         uses: graphics80/autograding-python-grader@v1
